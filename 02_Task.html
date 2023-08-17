@@ -17,10 +17,15 @@
 </head>
 <body>
     <div id="circle"></div>
-    <p>I'm Janith Nanayakkara.</p>
+    <h2>I'm Janith Nanayakkara.</h2>
+    <h3>Hello it's Me</h3>
     <script>
         $('#circle').click(function(){
             alert("Clicked Cicle Success");
+            $('h2').html("Yeah that's Me");
+        });
+        $('#circle').hover(function(){
+            alert($('h3').html("How are You !!!"));
         });
     </script>
 </body>
